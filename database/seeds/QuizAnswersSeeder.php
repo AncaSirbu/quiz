@@ -37,7 +37,7 @@ class QuizAnswersSeeder extends Seeder
         $quiz_answer->save();
 
         $quiz_answer = new QuizAnswer([
-            'good' => true,
+            'good' => false,
             'fair' => false,
             'neutral' => false,
             'bad' => true,
