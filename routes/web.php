@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('quiz')
+    ->group(function (){
+        Route::get('/create', 'QuizAnswerController@create')
+            ->name('quiz_answer.create');
+
+        Route::post('/', 'QuizAnswerController@store')
+            ->name('quiz_answer.store');
+    });

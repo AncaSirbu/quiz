@@ -18,4 +18,10 @@ class QuizAnswer extends Model
 {
     protected $table = "quiz_answers";
 
+    protected $fillable = [
+        'good',
+        'fair',
+        'neutral',
+        'bad',
+    ];
 }
