@@ -4,17 +4,17 @@ namespace App\Http\Controllers;
 
 use App\QuizAnswer;
 use Illuminate\Http\Request;
+use Symfony\Component\CssSelector\Node\SelectorNode;
 
 class QuizAnswerController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -31,15 +31,23 @@ class QuizAnswerController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     *
      */
     public function store(Request $request)
     {
         $quiz_answer = new QuizAnswer();
         $tmp = $request->input("answer");
         $quiz_answer->$tmp = 1;
-
         $quiz_answer->save();
+
+        $quiz_answers = QuizAnswer::query()
+            ->selectRaw("sum(good) as Good, sum(fair) as Fair, sum(neutral) as Neutral, sum(bad) as Bad")
+            ->first()
+            ->toArray();
+        $total_answers = array_sum($quiz_answers);
+
+        return view("test", compact("quiz_answers", "total_answers"));
+
     }
 
     /**
