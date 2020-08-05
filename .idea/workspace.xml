@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7cf4947e-feb2-432e-bf45-d1ed0db37c3c" name="Default Changelist" comment="" />
+    <list default="true" id="7cf4947e-feb2-432e-bf45-d1ed0db37c3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/test.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/quiz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/quiz.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuizAnswerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuizAnswerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/quiz.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/quiz.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -17,6 +32,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -130,6 +148,7 @@
       <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1fa5s438DOV92xckGjfSUQQrI9F" />
@@ -142,7 +161,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../final_project" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -151,7 +170,14 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -161,7 +187,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596443565605</updated>
-      <workItem from="1596443566647" duration="24147000" />
+      <workItem from="1596443566647" duration="33947000" />
+      <workItem from="1596540368425" duration="8000" />
+      <workItem from="1596540383801" duration="20132000" />
     </task>
     <servers />
   </component>
@@ -169,13 +197,21 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="3267" y="717" width="424" height="484" key="FileChooserDialogImpl" timestamp="1596551728315">
+      <screen x="2944" y="0" width="1080" height="1920" />
+    </state>
+    <state x="3267" y="717" width="424" height="484" key="FileChooserDialogImpl/1024.0.1920.1080/2944.0.1080.1920/0.27.1024.741@2944.0.1080.1920" timestamp="1596551728315" />
     <state x="3284" y="678" width="389" height="561" key="NewPhpClassDialog" timestamp="1596463144822">
       <screen x="2944" y="0" width="1080" height="1920" />
     </state>
     <state x="3284" y="678" width="389" height="561" key="NewPhpClassDialog/1024.0.1920.1080/2944.0.1080.1920/0.27.1024.741@2944.0.1080.1920" timestamp="1596463144822" />
-    <state x="2973" y="594" key="SettingsEditor" timestamp="1596462739113">
+    <state x="2973" y="594" key="SettingsEditor" timestamp="1596540327208">
       <screen x="2944" y="0" width="1080" height="1920" />
     </state>
-    <state x="2973" y="594" key="SettingsEditor/1024.0.1920.1080/2944.0.1080.1920/0.27.1024.741@2944.0.1080.1920" timestamp="1596462739113" />
+    <state x="2973" y="594" key="SettingsEditor/1024.0.1920.1080/2944.0.1080.1920/0.27.1024.741@2944.0.1080.1920" timestamp="1596540327208" />
+    <state x="3175" y="698" width="618" height="522" key="find.popup" timestamp="1596545925143">
+      <screen x="2944" y="0" width="1080" height="1920" />
+    </state>
+    <state x="3175" y="698" width="618" height="522" key="find.popup/1024.0.1920.1080/2944.0.1080.1920/0.27.1024.741@2944.0.1080.1920" timestamp="1596545925143" />
   </component>
 </project>
