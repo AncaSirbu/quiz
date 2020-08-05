@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreQuizAnswer;
 use App\QuizAnswer;
 use Illuminate\Http\Request;
 use Symfony\Component\CssSelector\Node\SelectorNode;
@@ -30,10 +31,10 @@ class QuizAnswerController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  StoreQuizAnswer  $request Request
      *
      */
-    public function store(Request $request)
+    public function store(StoreQuizAnswer $request)
     {
         $quiz_answer = new QuizAnswer();
         $tmp = $request->input("answer");

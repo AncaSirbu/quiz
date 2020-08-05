@@ -15,25 +15,23 @@
     {!! Form::open(['url' => route('quiz_answer.store')]) !!}
     @csrf
     <div class="form-check">
-        {!! Form::radio("answer", 'good', null, ["id"=>"answer1","class"=>"form-check-input".($errors->has("answer") ? "is-invalid" : "")]) !!}
-        {!! Form::label("answer1", "Good", ["class" =>"form-check-label"]) !!}
+        {!! Form::radio("answer", 'good', null, ["id"=>"answer1","class"=>"form-check-input ".($errors->has("answer") ? "is-invalid" : "")]) !!}
+        {!! Form::label("answer1", "A.Good", ["class" =>"form-check-label"]) !!}
     </div>
     <div class="form-check">
         {!! Form::radio("answer", 'fair', null,["id"=>"answer2","class"=>"form-check-input ".($errors->has("answer") ? "is-invalid" : "")]) !!}
-        {!! Form::label("answer2", "Fair", ["class" =>"form-check-label"]) !!}
+        {!! Form::label("answer2", "B.Fair", ["class" =>"form-check-label"]) !!}
     </div>
     <div class="form-check">
         {!! Form::radio("answer", 'neutral', null,["id"=>"answer3","class"=>"form-check-input ".($errors->has("answer") ? "is-invalid" : "")]) !!}
-        {!! Form::label("answer3", "Neutral", ["class" =>"form-check-label"]) !!}
+        {!! Form::label("answer3", "C.Neutral", ["class" =>"form-check-label"]) !!}
     </div>
     <div class="form-check">
         {!! Form::radio("answer", 'bad', null, ["id"=>"answer4","class"=>"form-check-input ".($errors->has("answer") ? "is-invalid" : "")]) !!}
-        {!! Form::label("answer4", "Bad", ["class" =>"form-check-label"]) !!}
-    </div>
-    <div>
-        @error("answer")
-        <div class="invalid-feedback">{{ $message }}</div>
-        @enderror
+        {!! Form::label("answer4", "D.Bad", ["class" =>"form-check-label"]) !!}
+            @error("answer")
+            <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
     </div>
         <div>
             <button type="submit" class="btn btn-primary">Submit</button>
