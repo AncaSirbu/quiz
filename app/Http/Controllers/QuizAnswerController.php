@@ -25,7 +25,7 @@ class QuizAnswerController extends Controller
      */
     public function create()
     {
-        return view('quiz');
+        return view('create');
     }
 
     /**
@@ -36,6 +36,7 @@ class QuizAnswerController extends Controller
      */
     public function store(StoreQuizAnswer $request)
     {
+//        dd($request->all());
         $quiz_answer = new QuizAnswer();
         $tmp = $request->input("answer");
         $quiz_answer->$tmp = 1;
@@ -47,7 +48,7 @@ class QuizAnswerController extends Controller
             ->toArray();
         $total_answers = array_sum($quiz_answers);
 
-        return view("test", compact("quiz_answers", "total_answers"));
+        return view("store", compact("quiz_answers", "total_answers"));
 
     }
 

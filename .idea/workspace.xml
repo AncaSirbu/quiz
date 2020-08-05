@@ -4,7 +4,13 @@
     <list default="true" id="7cf4947e-feb2-432e-bf45-d1ed0db37c3c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuizAnswerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuizAnswerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/quiz.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/quiz.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +156,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../final_project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel_mvc" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -179,7 +185,7 @@
       <workItem from="1596443566647" duration="33947000" />
       <workItem from="1596540368425" duration="8000" />
       <workItem from="1596540383801" duration="21572000" />
-      <workItem from="1596608826490" duration="5112000" />
+      <workItem from="1596608826490" duration="31615000" />
     </task>
     <servers />
   </component>
@@ -187,10 +193,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="3267" y="717" width="424" height="484" key="FileChooserDialogImpl" timestamp="1596551728315">
+    <state x="3267" y="717" width="424" height="484" key="FileChooserDialogImpl" timestamp="1596644147743">
       <screen x="2944" y="0" width="1080" height="1920" />
     </state>
-    <state x="3267" y="717" width="424" height="484" key="FileChooserDialogImpl/1024.0.1920.1080/2944.0.1080.1920/0.27.1024.741@2944.0.1080.1920" timestamp="1596551728315" />
+    <state x="3267" y="717" width="424" height="484" key="FileChooserDialogImpl/1024.0.1920.1080/2944.0.1080.1920/0.27.1024.741@2944.0.1080.1920" timestamp="1596644147743" />
     <state x="3284" y="678" width="389" height="561" key="NewPhpClassDialog" timestamp="1596463144822">
       <screen x="2944" y="0" width="1080" height="1920" />
     </state>
