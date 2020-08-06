@@ -16,31 +16,36 @@
     @csrf
     <div v-if="display_form">
         <div class="form-check">
-            {!! Form::radio("answer", 'good', null, ["v-model" =>"answer","id"=>"answer1","class"=>"form-check-input ".($errors->has("answer") ? "is-invalid" : "")]) !!}
+            {!! Form::radio("answer", 'good', null, ["v-model" =>"answer","id"=>"answer1","class"=>"form-check-input "]) !!}
             {!! Form::label("answer1", "A.Good", ["class" =>"form-check-label"]) !!}
         </div>
         <div class="form-check">
-            {!! Form::radio("answer", 'fair', null,["v-model" =>"answer","id"=>"answer2","class"=>"form-check-input ".($errors->has("answer") ? "is-invalid" : "")]) !!}
+            {!! Form::radio("answer", 'fair', null,["v-model" =>"answer","id"=>"answer2","class"=>"form-check-input "]) !!}
             {!! Form::label("answer2", "B.Fair", ["class" =>"form-check-label"]) !!}
         </div>
         <div class="form-check">
-            {!! Form::radio("answer", 'neutral', null,["v-model" =>"answer","id"=>"answer3","class"=>"form-check-input ".($errors->has("answer") ? "is-invalid" : "")]) !!}
+            {!! Form::radio("answer", 'neutral', null,["v-model" =>"answer","id"=>"answer3","class"=>"form-check-input "]) !!}
             {!! Form::label("answer3", "C.Neutral", ["class" =>"form-check-label"]) !!}
         </div>
         <div class="form-check">
-            {!! Form::radio("answer", 'bad', null, ["v-model" =>"answer","id"=>"answer4","class"=>"form-check-input ".($errors->has("answer") ? "is-invalid" : "")]) !!}
+            {!! Form::radio("answer", 'bad', null, ["v-model" =>"answer","id"=>"answer4","class"=>"form-check-input "]) !!}
             {!! Form::label("answer4", "D.Bad", ["class" =>"form-check-label"]) !!}
-                @error("answer")
-                <div class="invalid-feedback">{{ $message }}</div>
-                @enderror
+        </div>
+        <div class="alert alert-danger" v-if="errors && errors.answer">
+            @{{ errors.answer[0] }}
         </div>
             <div>
                 <button type="button" class="btn btn-primary"  @click="submit">Submit</button>
             </div>
         {!! Form::close() !!}
     </div>
-
-    <span v-html="HTMLcontent"></span>
+    <div>
+        <ol type="A">
+            <li  v-for="(quiz_answer, name) in quiz_answers">
+                @{{ name }} @{{ (quiz_answer / total * 100).toFixed(0) }} %  @{{ quiz_answer }} - results
+            </li>
+        </ol>
+    </div>
 </div>
 
 </div>
@@ -53,7 +58,8 @@
             display_form: true,
             title: "How do you find our service?",
             answer: " ",
-            HTMLcontent: null,
+            quiz_answers: null,
+            errors: {},
         },
         methods: {
             submit() {
@@ -65,15 +71,16 @@
                 )
                 .then((response)=>{
                     this.display_form = false
-                    this.HTMLcontent = response.data;
+                    this.quiz_answers = response.data;
+                    this.total = +this.quiz_answers.Good + +this.quiz_answers.Fair + +this.quiz_answers.Neutral + +this.quiz_answers.Bad
                 })
-
-                .catch(function (error) {
-                    console.log(error)
+                .catch(error => {
+                    if (error.response.status === 422) {
+                        this.errors = error.response.data.errors;
+                    }
                 })
-
             }
-        }
+        },
 
     });
 </script>

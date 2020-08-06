@@ -25,7 +25,4 @@ Route::prefix('quiz')
         Route::post('/', 'QuizAnswerController@store')
             ->name('quiz_answer.store');
 
-        Route::get('skills', function () {
-            return ['laravel','php','vue'];
-        })->name("test");
     });
