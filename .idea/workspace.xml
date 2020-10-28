@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cf4947e-feb2-432e-bf45-d1ed0db37c3c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuizAnswerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuizAnswerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/quiz.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/quiz.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +150,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel_mvc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -167,6 +161,8 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -186,6 +182,18 @@
       <workItem from="1596540368425" duration="8000" />
       <workItem from="1596540383801" duration="21572000" />
       <workItem from="1596608826490" duration="31615000" />
+      <workItem from="1596782413907" duration="1211000" />
+      <workItem from="1596992837002" duration="928000" />
+      <workItem from="1597040427200" duration="3914000" />
+      <workItem from="1597065977946" duration="801000" />
+      <workItem from="1597129499976" duration="798000" />
+      <workItem from="1597214696422" duration="3062000" />
+      <workItem from="1597649917482" duration="2237000" />
+      <workItem from="1597825047873" duration="1843000" />
+      <workItem from="1598270819060" duration="603000" />
+      <workItem from="1601888915855" duration="599000" />
+      <workItem from="1602224777966" duration="663000" />
+      <workItem from="1603886998105" duration="308000" />
     </task>
     <servers />
   </component>
@@ -193,10 +201,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="3267" y="717" width="424" height="484" key="FileChooserDialogImpl" timestamp="1596644147743">
+    <state x="3079" y="620" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597668431372">
       <screen x="2944" y="0" width="1080" height="1920" />
     </state>
-    <state x="3267" y="717" width="424" height="484" key="FileChooserDialogImpl/1024.0.1920.1080/2944.0.1080.1920/0.27.1024.741@2944.0.1080.1920" timestamp="1596644147743" />
+    <state x="3079" y="620" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/1024.0.1920.1080/2944.0.1080.1920/0.27.1024.741@2944.0.1080.1920" timestamp="1597668431372" />
+    <state x="3267" y="717" width="424" height="484" key="FileChooserDialogImpl" timestamp="1602226349875">
+      <screen x="2944" y="0" width="1080" height="1920" />
+    </state>
+    <state x="3267" y="717" width="424" height="484" key="FileChooserDialogImpl/1024.0.1920.1080/2944.0.1080.1920/0.27.1024.741@2944.0.1080.1920" timestamp="1602226349875" />
     <state x="3284" y="678" width="389" height="561" key="NewPhpClassDialog" timestamp="1596463144822">
       <screen x="2944" y="0" width="1080" height="1920" />
     </state>
