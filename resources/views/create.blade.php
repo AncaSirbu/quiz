@@ -10,43 +10,44 @@
 </head>
 <body>
 <div id="app">
-    <h3 class="text-center">@{{ title }}</h3>
-<div class="col-md-5 offset-md-5">
-    {!! Form::open() !!}
-    @csrf
-    <div v-if="display_form">
-        <div class="form-check">
-            {!! Form::radio("answer", 'good', null, ["v-model" =>"answer","id"=>"answer1","class"=>"form-check-input "]) !!}
-            {!! Form::label("answer1", "A.Good", ["class" =>"form-check-label"]) !!}
-        </div>
-        <div class="form-check">
-            {!! Form::radio("answer", 'fair', null,["v-model" =>"answer","id"=>"answer2","class"=>"form-check-input "]) !!}
-            {!! Form::label("answer2", "B.Fair", ["class" =>"form-check-label"]) !!}
-        </div>
-        <div class="form-check">
-            {!! Form::radio("answer", 'neutral', null,["v-model" =>"answer","id"=>"answer3","class"=>"form-check-input "]) !!}
-            {!! Form::label("answer3", "C.Neutral", ["class" =>"form-check-label"]) !!}
-        </div>
-        <div class="form-check">
-            {!! Form::radio("answer", 'bad', null, ["v-model" =>"answer","id"=>"answer4","class"=>"form-check-input "]) !!}
-            {!! Form::label("answer4", "D.Bad", ["class" =>"form-check-label"]) !!}
-        </div>
-        <div class="alert alert-danger" v-if="errors && errors.answer">
-            @{{ errors.answer[0] }}
-        </div>
-            <div>
-                <button type="button" class="btn btn-primary"  @click="submit">Submit</button>
-            </div>
-        {!! Form::close() !!}
-    </div>
-    <div>
-        <ol type="A">
-            <li  v-for="(quiz_answer, name) in quiz_answers">
-                @{{ name }} @{{ (quiz_answer / total * 100).toFixed(0) }} %  @{{ quiz_answer }} - results
-            </li>
-        </ol>
-    </div>
-</div>
+    <router-view></router-view>
+{{--    <h3 class="text-center">@{{ title }}</h3>--}}
+{{--<div class="col-md-5 offset-md-5">--}}
+{{--    {!! Form::open() !!}--}}
+{{--    @csrf--}}
+{{--    <div v-if="display_form">--}}
+{{--        <div class="form-check">--}}
+{{--            {!! Form::radio("answer", 'good', null, ["v-model" =>"answer","id"=>"answer1","class"=>"form-check-input "]) !!}--}}
+{{--            {!! Form::label("answer1", "A.Good", ["class" =>"form-check-label"]) !!}--}}
+{{--        </div>--}}
+{{--        <div class="form-check">--}}
+{{--            {!! Form::radio("answer", 'fair', null,["v-model" =>"answer","id"=>"answer2","class"=>"form-check-input "]) !!}--}}
+{{--            {!! Form::label("answer2", "B.Fair", ["class" =>"form-check-label"]) !!}--}}
+{{--        </div>--}}
+{{--        <div class="form-check">--}}
+{{--            {!! Form::radio("answer", 'neutral', null,["v-model" =>"answer","id"=>"answer3","class"=>"form-check-input "]) !!}--}}
+{{--            {!! Form::label("answer3", "C.Neutral", ["class" =>"form-check-label"]) !!}--}}
+{{--        </div>--}}
+{{--        <div class="form-check">--}}
+{{--            {!! Form::radio("answer", 'bad', null, ["v-model" =>"answer","id"=>"answer4","class"=>"form-check-input "]) !!}--}}
+{{--            {!! Form::label("answer4", "D.Bad", ["class" =>"form-check-label"]) !!}--}}
+{{--        </div>--}}
+{{--        <div class="alert alert-danger" v-if="errors && errors.answer">--}}
+{{--            @{{ errors.answer[0] }}--}}
+{{--        </div>--}}
+{{--            <div>--}}
+{{--                <button type="button" class="btn btn-primary"  @click="submit">Submit</button>--}}
+{{--            </div>--}}
+{{--        {!! Form::close() !!}--}}
+{{--    </div>--}}
+{{--    <div>--}}
+{{--        <ol type="A">--}}
+{{--            <li  v-for="(quiz_answer, name) in quiz_answers">--}}
+{{--                @{{ name }} @{{ (quiz_answer / total * 100).toFixed(0) }} %  @{{ quiz_answer }} - results--}}
+{{--            </li>--}}
+{{--        </ol>--}}
+{{--    </div>--}}
+{{--</div>--}}
 
 </div>
 </body>
